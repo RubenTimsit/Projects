@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu des Dilemmes Éthiques</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
+    #game-container {
+        background-color: #fff;
+        padding: 20px;
+        margin: auto;
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #level-number {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Centre le texte */
+    }
+    #scenario-text {
+        font-size: 1.2em;
+    }
+    #choices-container {
+        margin-top: 20px;
+    }
+    .choice-button {
+        display: block;
+        margin: 10px auto;
+        padding: 15px 25px;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .choice-button:hover {
+        background-color: #0056b3;
+    }
+    #response-container {
+        margin-top: 30px;
+    }
+    #next-button {
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        display: block; /* Le bouton occupe toute la largeur disponible */
+        margin: 20px auto 0 auto; /* Centre le bouton horizontalement */
+    }
+    .summary-item {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h2 id="level-number"></h2>
+
+        <!-- Texte du scénario -->
+        <h3 id="scenario-text"></h3>
+        
+        <!-- Image du scénario -->
+        <img id="scenario-image" src="" alt="Image du scénario" style="max-width: 70%; height: auto;">
+        
+        <!-- Les choix de l'utilisateur -->
+        <div id="choices-container">
+            <!-- Les boutons de choix seront générés ici -->
+        </div>
+        
+        <!-- La réponse de l'assistant -->
+        <div id="response-container" style="display: none;">
+            <h3>AI response :</h3>
+            <p id="assistant-response"></p>
+        </div>
+        
+        <!-- Bouton pour passer au niveau suivant -->
+        <button id="next-button" style="display: none;">Next Level</button>
+    </div>
+
+    <!-- Inclusion du script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
